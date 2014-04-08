@@ -19,9 +19,10 @@
 <p><strong>Output data:</strong> The one-dimensional list with integers.</p>
 
 <p><strong>Example:<br/></strong></p>
-<pre class="brush: python">checkio([1, 2, 3]) == [1, 2, 3]
-checkio([1, [2, 2, 2], 4]) == [1, 2, 2, 2, 4]
-checkio([[[2]], [4, [5, 6, [6], 6, 6, 6], 7]]) == [2, 4, 5, 6, 6, 6, 6, 6, 7]
+<pre class="brush: python">flat_list([1, 2, 3]) == [1, 2, 3]
+flat_list([1, [2, 2, 2], 4]) == [1, 2, 2, 2, 4]
+flat_list([[[2]], [4, [5, 6, [6], 6, 6, 6], 7]]) == [2, 4, 5, 6, 6, 6, 6, 6, 7]
+flat_list([-1, [1, [-2], 1], -1]) == [-1, 1, -2, 1, -1]
 </pre>
 
 <p class="for_info_only">
