@@ -1,0 +1,45 @@
+<p>
+    Nikoletta szeret mindent rendszerezni. Ezúttal egy számsorozatot rendszerezett 
+    és az erőfeszítései eredményeképpen egy mélyen egymásba ágyazott számokból álló 
+    listát kapott. Zsófia és István nem értik igazán az ő szervezési rendszerét és 
+    nekik arra lenne szükségük, hogy megértsék, hogy mindez mit jelent. Nekik szükségük 
+    van az Ön segítségére, hogy megértség Nikoletta őrült listáját.
+</p>
+<p>
+    Adott egy lista, amely egész számokat tartalmaz vagy egyéb beágyazott listákat, 
+    amelyek ugyancsak tartalmazhatnak más listákat, valamint egészeket, amelyek… 
+    egyszóval az alapelv érthető. Önnek az a feladata, hogy az összes egész értéket 
+    egy szimpla egyszintes listává alakítsa. A listaelemek sorrendjének változatlannak 
+    kell maradnia az eredeti lista balról jobbra olvasott karakterláncként megadott 
+    ábrázolásához képest.
+</p>
+
+<p>
+    Nekünk el kell rejteni ezt s programot Nikoletta elől úgy, hogy könnyen elrejthető
+    kisméretűvé tesszük azt. Ennek okáért az Ön által megírt programkódnak 140 
+    karakternél rövidebbnek kell lennie (a szóközökkel együtt).
+</p>
+
+<p><strong>Bemeneti adatok:</strong> egész számokból (int) álló egymásba ágyazott lista (list)</p>
+
+<p><strong>Kimeneti adatok:</strong> egy egydimenziós egész számokból (int) álló lista (list).</p>
+
+<p><strong>Példák:<br/></strong></p>
+<pre class="brush: python">flat_list([1, 2, 3]) == [1, 2, 3]
+flat_list([1, [2, 2, 2], 4]) == [1, 2, 2, 2, 4]
+flat_list([[[2]], [4, [5, 6, [6], 6, 6, 6], 7]]) == [2, 4, 5, 6, 6, 6, 6, 6, 7]
+flat_list([-1, [1, [-2], 1], -1]) == [-1, 1, -2, 1, -1]
+</pre>
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    Az itt használt alapelv hasznos lehet bonyolult szerkezetű állományok 
+    feldolgozásánál és elemzésénél, valamint kreativitást igénylő programozási 
+    vetélkedő feladatainál, ahol kitétel a programkód rövidsége.
+</p>
+
+<p>
+    <strong>Előfeltételek: </strong><br> 0 &le; |array| &le; 100<br>
+    &forall; x ∈ a tömbnek : -2<sup>32</sup> < x < 2<sup>32</sup> vagy az x - az egy lista<br>
+    mélység < 10
+</p>
