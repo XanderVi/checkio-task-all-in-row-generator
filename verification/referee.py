@@ -36,7 +36,7 @@ from tests import TESTS
 cover_code = '''
 import types
 def cover(func, in_data):
-    res = func(set(in_data))
+    res = func(in_data)
     assert isinstance(res, types.GeneratorType), "your function should be a generator"
     
     return list(res)
