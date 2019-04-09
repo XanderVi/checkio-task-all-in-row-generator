@@ -1,9 +1,11 @@
 def flat_list(array):
-    return array
+    yield from array
 
 if __name__ == '__main__':
-    assert flat_list([1, 2, 3]) == [1, 2, 3], "First"
-    assert flat_list([1, [2, 2, 2], 4]) == [1, 2, 2, 2, 4], "Second"
-    assert flat_list([[[2]], [4, [5, 6, [6], 6, 6, 6], 7]]) == [2, 4, 5, 6, 6, 6, 6, 6, 7], "Third"
-    assert flat_list([-1, [1, [-2], 1], -1]) == [-1, 1, -2, 1, -1], "Four"
+    import types
+    assert isinstance(flat_list([0]), types.GeneratorType), "your function should be a generator"
+    assert list(flat_list([1, 2, 3])) == [1, 2, 3], "First"
+    assert list(flat_list([1, [2, 2, 2], 4])) == [1, 2, 2, 2, 4], "Second"
+    assert list(flat_list([[[2]], [4, [5, 6, [6], 6, 6, 6], 7]])) == [2, 4, 5, 6, 6, 6, 6, 6, 7], "Third"
+    assert list(flat_list([-1, [1, [-2], 1], -1])) == [-1, 1, -2, 1, -1], "Four"
     print('Done! Check it')
